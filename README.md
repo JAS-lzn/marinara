@@ -1,16 +1,8 @@
-# Fresh project
+# Marinara
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+A site to help list, and search thru, all the open source 3D printers I can find.
 
-### Usage
+# Modivation
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
-
-Then start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+Simply put, there are so many different Open Source 3D printing projects being developed for me to keep track of. I'm
+making this to help organize all the info scattered around the internet so that it's easy to find and sort thru.
