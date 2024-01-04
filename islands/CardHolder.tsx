@@ -18,7 +18,7 @@ export default function CardHolder(props: DisplayProps) {
 		);
 	});
 	return (
-		<div class="flex gap-8 py-6">
+		<div class="card-grid">
 			{setOfCards}
 		</div>
 	);

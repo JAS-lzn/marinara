@@ -1,4 +1,3 @@
-import type { Signal } from "@preact/signals";
 import { Printer } from "../sauce/printer.ts";
 import { JSX } from "preact/jsx-runtime";
 
@@ -14,7 +13,7 @@ export default function PrinterCard(props: CounterProps): JSX.Element {
 			<p>Developer: {currentPrinter.developer}</p>
 			<p>Motion System: {currentPrinter.motionSystem}</p>
 			{currentPrinter.family ? <p>Family of Printers: {currentPrinter.family}</p> : ""}
-			<p>Link to Project: {currentPrinter.source.toString()}</p>
+			<p>Link to Project: <a href={currentPrinter.source.toString()}>{currentPrinter.source.host.toString()}</a></p>
 			<p>License: {currentPrinter.license}</p>
 		</div>
 	);

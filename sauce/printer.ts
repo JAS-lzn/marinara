@@ -61,7 +61,7 @@ export function openSauce(): Array<Printer> {
 				argDeveloper: sauce.developer,
 				argLicense: sauce.license,
 				argFamily: sauce.family,
-				argMotionSystem: motionSystemSelector(sauce.motionSystem),
+				argMotionSystem: sauce.motionSystem,
 				argSource: new URL(sauce.source),
 			}),
 		);

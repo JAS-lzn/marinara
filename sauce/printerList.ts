@@ -1,10 +1,12 @@
+import { MotionSystem } from "./motionSystem.ts";
+
 export const sauces = [
 	{
 		"name": "Mulbot",
 		"developer": "3dprintingworld",
 		"family": "",
 		"license": "GNU - GPL",
-		"motionSystem": "Bed Slinger",
+		"motionSystem": MotionSystem.bedSlinger,
 		"source": "https://reprap.org/wiki/Mulbot",
 	},
 	{
@@ -12,7 +14,7 @@ export const sauces = [
 		"developer": "Rolohaun Design",
 		"family": "Rook",
 		"license": "CC BY-NC 4.0",
-		"motionSystem": "Core XY",
+		"motionSystem": MotionSystem.coreXY,
 		"source": "https://www.printables.com/model/387431-rook-mk1-3d-printer",
 	},
 	{
@@ -20,7 +22,63 @@ export const sauces = [
 		"developer": "KRALYN",
 		"family": "",
 		"license": "CC-BY-4.0",
-		"motionSystem": "Cartesian",
+		"motionSystem": MotionSystem.bedSlinger,
 		"source": "https://github.com/KRALYN/PositronV3",
+	},
+	{
+		"name": "OpenSLS",
+		"developer": "Rice University",
+		"family": "",
+		"license": "GPL",
+		"motionSystem": MotionSystem.other,
+		"source": "https://reprap.org/wiki/OpenSLS",
+	},
+	{
+		"name": "SLS4All",
+		"developer": "Tomas Starek",
+		"family": "",
+		"license": "The 3-Clause BSD License",
+		"motionSystem": MotionSystem.other,
+		"source": "https://sls4all.com/",
+	},
+	{
+		"name": "Voron 0",
+		"developer": "Voron Design",
+		"family": "Voron",
+		"license": "GPL-3.0 license",
+		"motionSystem":MotionSystem.coreXY,
+		"source": "https://github.com/VoronDesign/Voron-0",
+	},
+	{
+		"name": "Voron 2",
+		"developer": "Voron Design",
+		"family": "Voron",
+		"license": "GPL-3.0 license",
+		"motionSystem":MotionSystem.coreXY,
+		"source": "https://github.com/VoronDesign/Voron-2",
+	},
+	{
+		"name": "Voron Trident",
+		"developer": "Voron Design",
+		"family": "Voron",
+		"license": "GPL-3.0 license",
+		"motionSystem":MotionSystem.coreXY,
+		"source": "https://github.com/VoronDesign/Voron-Trident",
+	},
+	{
+		"name": "Voron Switchwire",
+		"developer": "Voron Design",
+		"family": "Voron",
+		"license": "GPL-3.0 license",
+		"motionSystem":MotionSystem.coreXY,
+		"source": "https://github.com/VoronDesign/Voron-Switchwire",
+	},
+	{
+		"name": "CroXY",
+		"developer": "CroXY",
+		"family": "",
+		"license": " CC BY-NC-SA 4.0 Deed ",
+		"motionSystem": MotionSystem.crossGantry,
+		"source": "https://github.com/CroXY3D/CroXY",
 	},
 ];

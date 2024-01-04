@@ -2,3 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+.body-holder{
+	width: 90vw;
+	margin: auto;
+}
+
+.card-grid{
+	padding:2rem;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: auto;
+	column-gap: 2vw;
+	row-gap: 2vh;
+}
+
+
+.card{
+	font-size: small;
+	background-color: #e6f2ff;
+	padding: .5rem;
+}
+
+.card > p {
+	margin-top: 1vh;
+	
+}
