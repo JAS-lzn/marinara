@@ -52,10 +52,10 @@ export class Printer {
 }
 
 export function openSauce(): Array<Printer> {
-	const sauceAccumulatior: Array<Printer> = [];
+	const sauceAccumulator: Array<Printer> = [];
 
 	sauces.forEach((sauce) => {
-		sauceAccumulatior.push(
+		sauceAccumulator.push(
 			new Printer({
 				argName: sauce.name,
 				argDeveloper: sauce.developer,
@@ -67,5 +67,5 @@ export function openSauce(): Array<Printer> {
 		);
 	});
 
-	return sauceAccumulatior;
+	return sauceAccumulator;
 }
