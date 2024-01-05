@@ -11,7 +11,7 @@ export default class Firmware{
 	developer: string;
 	// the license the firmware is licensed under, eg: "GPL"
 	license: string;
-	// Link to the firmwares project page, eg: https://github.com/Duet3D/RepRapFirmware
+	// Link to the firmware's project page, eg: https://github.com/Duet3D/RepRapFirmware
 	source: URL;
 
 	constructor(
