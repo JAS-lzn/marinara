@@ -1,4 +1,4 @@
-import { MotionSystem, motionSystemSelector } from "./motionSystem.ts";
+import { MotionSystem } from "./motionSystem.ts";
 import { sauces } from "./printerList.ts";
 
 /**

@@ -46,7 +46,7 @@ export const sauces = [
 		"developer": "Voron Design",
 		"family": "Voron",
 		"license": "GPL-3.0 license",
-		"motionSystem":MotionSystem.coreXY,
+		"motionSystem": MotionSystem.coreXY,
 		"source": "https://github.com/VoronDesign/Voron-0",
 	},
 	{
@@ -54,7 +54,7 @@ export const sauces = [
 		"developer": "Voron Design",
 		"family": "Voron",
 		"license": "GPL-3.0 license",
-		"motionSystem":MotionSystem.coreXY,
+		"motionSystem": MotionSystem.coreXY,
 		"source": "https://github.com/VoronDesign/Voron-2",
 	},
 	{
@@ -62,7 +62,7 @@ export const sauces = [
 		"developer": "Voron Design",
 		"family": "Voron",
 		"license": "GPL-3.0 license",
-		"motionSystem":MotionSystem.coreXY,
+		"motionSystem": MotionSystem.coreXY,
 		"source": "https://github.com/VoronDesign/Voron-Trident",
 	},
 	{
@@ -70,7 +70,7 @@ export const sauces = [
 		"developer": "Voron Design",
 		"family": "Voron",
 		"license": "GPL-3.0 license",
-		"motionSystem":MotionSystem.coreXY,
+		"motionSystem": MotionSystem.coreXY,
 		"source": "https://github.com/VoronDesign/Voron-Switchwire",
 	},
 	{

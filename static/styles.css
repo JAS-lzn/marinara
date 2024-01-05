@@ -17,8 +17,8 @@
 	row-gap: 2vh;
 }
 
-
 .card{
+	width: 100%;
 	font-size: small;
 	background-color: #e6f2ff;
 	padding: .5rem;
@@ -26,5 +26,39 @@
 
 .card > p {
 	margin-top: 1vh;
-	
+}
+
+.card > p > a {
+	color: #335880;
+}
+
+.filter-holder{
+	text-align: center;
+}
+
+.filter-holder > *{
+	margin: 1em .125em;
+}
+
+.filter-button{
+	padding-left: 0.5rem/* 8px */;
+    padding-right: 0.5rem/* 8px */;
+	padding-top: 0.25rem/* 4px */;
+    padding-bottom: 0.25rem/* 4px */;
+	--tw-border-opacity: 1;
+    border-color: rgb(107 114 128 / var(--tw-border-opacity));
+	border-width: 2px;
+	border-radius: 0.25rem/* 4px */;
+	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.filter-selected{
+	background-color: rgb(154, 156, 160) !important;
+}
+
+.filter-button:hover{
+	--tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
