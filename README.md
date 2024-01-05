@@ -5,7 +5,7 @@ A site to help list, and search thru, all the open source 3D printers, firmware,
 # Motivation
 
 Simply put, I want to try and keep track of the open source printing ecosystem, but it's too scattered to do manually.
-By piling projects together, I'll at least have a vague hope of at least remembering the different projects.
+By piling projects together, I'll at least have a vague hope of remembering the different projects.
 
 # Local Usage
 
