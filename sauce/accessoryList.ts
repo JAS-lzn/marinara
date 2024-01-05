@@ -1,4 +1,4 @@
-export const aux = [
+export const accessories = [
 	{
 		"name": "Enraged Rabbit Carrot Feeder",
 		"developer": "Enraged-Rabbit-Community",

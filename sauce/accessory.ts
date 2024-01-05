@@ -5,7 +5,7 @@
  * ex:https://github.com/Enraged-Rabbit-Community/ERCF_v2#enraged-rabbit-filametrix-erf
  * 
  */
-export default class AuxillaryComponent{
+export default class Accessory{
 	// name of the mod, eg: "Enraged Rabbit"
 	name: string;
 	// the developer of the mod, eg: "Enraged Rabbit Community"
