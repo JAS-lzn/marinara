@@ -14,7 +14,7 @@ export default function PrinterCard(props: CounterProps): JSX.Element {
 			<p>Motion System: {currentPrinter.motionSystem}</p>
 			{currentPrinter.family ? <p>Family of Printers: {currentPrinter.family}</p> : ""}
 			<p>
-				Link to Project: <a href={currentPrinter.source.toString()}>{currentPrinter.source.host.toString()}</a>
+				Link to Project: <a href={currentPrinter.source.toString()}>{currentPrinter.source.toString()}</a>
 			</p>
 			<p>License: {currentPrinter.license}</p>
 		</div>

@@ -10,6 +10,7 @@ interface FilterProps {
 }
 
 export default function Filter(props: FilterProps) {
+
 	const nameStatus = props.nameFilter.value;
 	const devStatus = props.devFilter.value;
 	const licStatus = props.licFilter.value;
@@ -19,34 +20,45 @@ export default function Filter(props: FilterProps) {
 		<menu class="filter-holder">
 			<FilterButton
 				class={nameStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => props.nameFilter.value = !nameStatus}
+				onClick={() => toggleFilters("name", props)}
 			>
 				Name
 			</FilterButton>
 			<FilterButton
 				class={devStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => props.devFilter.value = !devStatus}
+				onClick={() => toggleFilters("dev", props)}
 			>
 				Developer
 			</FilterButton>
 			<FilterButton
 				class={licStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => props.licFilter.value = !licStatus}
+				onClick={() => toggleFilters("lic", props)}
 			>
 				License
 			</FilterButton>
 			<FilterButton
 				class={famStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => props.famFilter.value = !famStatus}
+				onClick={() => toggleFilters("fam", props)}
 			>
 				Family
 			</FilterButton>
 			<FilterButton
 				class={motionStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => props.motionFilter.value = !motionStatus}
+				onClick={() => toggleFilters("motion", props)}
 			>
 				Motion System
 			</FilterButton>
 		</menu>
 	);
+}
+
+// this feels illegal, but I can't think of a better idea
+function toggleFilters(argFilter: string, argProps: FilterProps){
+
+	argProps.devFilter.value = argFilter === "dev" ? true : false;
+	argProps.famFilter.value = argFilter === "fam" ? true : false;
+	argProps.licFilter.value = argFilter === "lic" ? true : false;
+	argProps.nameFilter.value = argFilter === "name" ? true : false;
+	argProps.motionFilter.value = argFilter === "motion" ? true : false;
+
 }

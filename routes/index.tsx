@@ -24,7 +24,7 @@ export default function Home() {
 					/>
 					<h1 class="text-4xl font-bold">Marinara</h1>
 					<p class="my-4">
-						Find some tasty open sauce projects today
+						Find some tasty open sauce projects, today!
 					</p>
 				</div>
 			</div>
@@ -36,7 +36,14 @@ export default function Home() {
 					famFilter={famFilter}
 					motionFilter={motionFilter}
 				/>
-				<CardHolder sauce={sauces} />
+				<CardHolder
+					sauce={sauces}
+					nameFilter={nameFilter}
+					devFilter={devFilter}
+					licFilter={licFilter}
+					famFilter={famFilter}
+					motionFilter={motionFilter}
+				/>
 			</div>
 		</div>
 	);
