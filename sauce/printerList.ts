@@ -81,4 +81,20 @@ export const sauces = [
 		"motionSystem": MotionSystem.crossGantry,
 		"source": "https://github.com/CroXY3D/CroXY",
 	},
+	{
+		"name": "VzBoT-Vz330",
+		"developer": "VzBoT3D",
+		"family": "",
+		"license": "CC BY-NC 4.0 Deed",
+		"motionSystem": MotionSystem.coreXY,
+		"source": "https://github.com/VzBoT3D/VzBoT-Vz330",
+	},
+	{
+		"name": "V-Minion",
+		"developer": "Rat Rig",
+		"family": "",
+		"license": "CC BY-NC-SA 4.0 Legal Code ",
+		"motionSystem": MotionSystem.bedSlinger,
+		"source": "https://github.com/Rat-Rig/V-Minion",
+	},
 ];

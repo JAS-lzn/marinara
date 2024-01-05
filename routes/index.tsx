@@ -24,7 +24,7 @@ export default function Home() {
 					/>
 					<h1 class="text-4xl font-bold">Marinara</h1>
 					<p class="my-4">
-						Find some tasty open sauce projects, today!
+						Find some tasty open sauce 3D Printing projects today!
 					</p>
 				</div>
 			</div>
