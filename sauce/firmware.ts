@@ -1,10 +1,7 @@
-
-
 /**
  * representation of a firmware for 3d printing
- * 
  */
-export default class Firmware{
+export default class Firmware {
 	// name of the firmware, eg: "RepRap Firmware"
 	name: string;
 	// the developer of the firmware, eg: "Duet3D"

@@ -1,9 +1,7 @@
-
-
 /**
  * representation of a firmware for 3d printing
  */
-export default class Slicer{
+export default class Slicer {
 	// name of the slicer, eg: "Cura"
 	name: string;
 	// the developer of the slicer, eg: "Ultimaker"

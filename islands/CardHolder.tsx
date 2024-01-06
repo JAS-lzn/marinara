@@ -12,7 +12,7 @@ interface DisplayProps {
 	motionFilter: Signal<boolean>;
 }
 
-interface selectedFilters{
+interface selectedFilters {
 	nameFilter: boolean;
 	devFilter: boolean;
 	licFilter: boolean;
@@ -29,8 +29,8 @@ export default function CardHolder(props: DisplayProps) {
 		devFilter: props.devFilter.valueOf(),
 		licFilter: props.licFilter.valueOf(),
 		famFilter: props.famFilter.valueOf(),
-		motionFilter: props.motionFilter.valueOf()
-	}
+		motionFilter: props.motionFilter.valueOf(),
+	};
 	const sortedPrinters = handleFilters(setOfPrinters, setOfFilters);
 
 	sortedPrinters.forEach((printer) => {
@@ -45,46 +45,49 @@ export default function CardHolder(props: DisplayProps) {
 	);
 }
 
-function handleFilters(argPrinters: Array<Printer>, argFilters: selectedFilters): Array<Printer>{
-	if(argFilters.nameFilter === true)
-		return argPrinters.sort((a,b) => {
+function handleFilters(argPrinters: Array<Printer>, argFilters: selectedFilters): Array<Printer> {
+	if (argFilters.nameFilter === true) {
+		return argPrinters.sort((a, b) => {
 			if (a.name === b.name) {
 				return 0;
-			  }
-			  return a.name < b.name ? -1 : 1;
+			}
+			return a.name < b.name ? -1 : 1;
 		});
-		else if(argFilters.devFilter === true)
-		return argPrinters.sort((a,b) => {
+	} else if (argFilters.devFilter === true) {
+		return argPrinters.sort((a, b) => {
 			if (a.developer === b.developer) {
 				return 0;
-			  }
-			  return a.developer < b.developer ? -1 : 1;
+			}
+			return a.developer < b.developer ? -1 : 1;
 		});
-		else if(argFilters.motionFilter === true)
-		return argPrinters.sort((a,b) => {
+	} else if (argFilters.motionFilter === true) {
+		return argPrinters.sort((a, b) => {
 			if (a.motionSystem === b.motionSystem) {
 				return 0;
-			  }
-			  return a.motionSystem < b.motionSystem ? -1 : 1;
+			}
+			return a.motionSystem < b.motionSystem ? -1 : 1;
 		});
-		else if(argFilters.famFilter === true)
-		return argPrinters.sort((a,b) => {
+	} else if (argFilters.famFilter === true) {
+		return argPrinters.sort((a, b) => {
 			if (a.family === b.family) {
 				return 0;
-			  }
-			if (a.family === undefined)
-				return -1
-			if (b.family === undefined)
-				return -1
-			  return a.family < b.family ? -1 : 1;
+			}
+			if (a.family === undefined) {
+				return -1;
+			}
+			if (b.family === undefined) {
+				return -1;
+			}
+			return a.family < b.family ? -1 : 1;
 		});
-		else if(argFilters.licFilter === true)
-		return argPrinters.sort((a,b) => {
+	} else if (argFilters.licFilter === true) {
+		return argPrinters.sort((a, b) => {
 			if (a.license === b.license) {
 				return 0;
-			  }
-			  return a.license < b.license ? -1 : 1;
+			}
+			return a.license < b.license ? -1 : 1;
 		});
+	}
 
-	return argPrinters
+	return argPrinters;
 }

@@ -2,6 +2,8 @@ import { useSignal } from "@preact/signals";
 import { openSauce } from "../sauce/printer.ts";
 import CardHolder from "../islands/CardHolder.tsx";
 import Filter from "../islands/Filter.tsx";
+import SubjectSelector from "../islands/SubjectSelector.tsx";
+import SelectorToggle from "../islands/SelectorToggle.tsx";
 
 export default function Home() {
 	const sauces = useSignal(openSauce());
@@ -11,6 +13,13 @@ export default function Home() {
 	const licFilter = useSignal(false);
 	const famFilter = useSignal(false);
 	const motionFilter = useSignal(false);
+
+	const accessories = useSignal(false);
+	const firmware = useSignal(false);
+	const printer = useSignal(true);
+	const slicer = useSignal(false);
+	const selecting = useSignal(false);
+
 	return (
 		<div>
 			<div class="px-4 py-8 mx-auto bg-[#F08B86]">
@@ -28,6 +37,17 @@ export default function Home() {
 					</p>
 				</div>
 			</div>
+			<div class="text-right toggle-holder">
+				<SelectorToggle selecting={selecting} />
+			</div>
+			<SubjectSelector
+				accessories={accessories}
+				firmware={firmware}
+				printer={printer}
+				slicer={slicer}
+				selecting={selecting}
+			/>
+
 			<div class="body-holder">
 				<Filter
 					nameFilter={nameFilter}

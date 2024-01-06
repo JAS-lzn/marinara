@@ -1,11 +1,8 @@
-
-
 /**
  * representation of a add on, mod, etc for a 3d Printer
  * ex:https://github.com/Enraged-Rabbit-Community/ERCF_v2#enraged-rabbit-filametrix-erf
- * 
  */
-export default class Accessory{
+export default class Accessory {
 	// name of the mod, eg: "Enraged Rabbit"
 	name: string;
 	// the developer of the mod, eg: "Enraged Rabbit Community"
@@ -22,7 +19,7 @@ export default class Accessory{
 			argName: string;
 			argDeveloper: string;
 			argLicense: string;
-			argDescription: string
+			argDescription: string;
 			argSource: URL;
 		},
 	) {

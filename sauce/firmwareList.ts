@@ -23,4 +23,4 @@ export const aux = [
 		"license": "GPL-3.0 license",
 		"source": "https://github.com/repetier/Repetier-Firmware",
 	},
-]
+];

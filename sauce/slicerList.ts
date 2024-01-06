@@ -23,4 +23,4 @@ export const aux = [
 		"license": "AGPL-3.0 license",
 		"source": "https://github.com/slic3r/Slic3r",
 	},
-]
+];

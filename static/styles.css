@@ -40,6 +40,10 @@
 	margin: 1em .125em;
 }
 
+.selected-selector{
+	background-color:teal;
+}
+
 .filter-button{
 	padding-left: 0.5rem/* 8px */;
     padding-right: 0.5rem/* 8px */;
@@ -61,4 +65,41 @@
 .filter-button:hover{
 	--tw-bg-opacity: 1;
     background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.toggle-holder{
+	padding: 1vh 2vw;
+}
+
+.subject-selector{
+	position: fixed;
+	display: grid;
+	text-align: left;
+	padding-left: .25vw;
+	width: 15vw;
+	top: 0px;
+	left: 0px;
+	z-index: 40;
+	height: 100vh;
+	overflow-y: auto;
+	transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+	--tw-translate-x: -100%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+	--tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+	
+}
+
+.subject-selector.visible{
+	transform: none;
+	visibility: visible;
+}
+
+.subject-selector > button {
+	text-align: left;
+	border-radius: .3rem;
+	margin: .125vw 0;
+	padding: 1em;
 }

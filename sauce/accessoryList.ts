@@ -36,5 +36,4 @@ export const accessories = [
 		"description": "A Raspberry Pi OS based distribution for 3D Printers.",
 		"source": "https://github.com/mainsail-crew/MainsailOS",
 	},
-	
-]
+];

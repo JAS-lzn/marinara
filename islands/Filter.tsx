@@ -10,7 +10,6 @@ interface FilterProps {
 }
 
 export default function Filter(props: FilterProps) {
-
 	const nameStatus = props.nameFilter.value;
 	const devStatus = props.devFilter.value;
 	const licStatus = props.licFilter.value;
@@ -53,12 +52,10 @@ export default function Filter(props: FilterProps) {
 }
 
 // this feels illegal, but I can't think of a better idea
-function toggleFilters(argFilter: string, argProps: FilterProps){
-
+function toggleFilters(argFilter: string, argProps: FilterProps) {
 	argProps.devFilter.value = argFilter === "dev" ? true : false;
 	argProps.famFilter.value = argFilter === "fam" ? true : false;
 	argProps.licFilter.value = argFilter === "lic" ? true : false;
 	argProps.nameFilter.value = argFilter === "name" ? true : false;
 	argProps.motionFilter.value = argFilter === "motion" ? true : false;
-
 }

@@ -9,6 +9,8 @@ import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $CardHolder from "./islands/CardHolder.tsx";
 import * as $Filter from "./islands/Filter.tsx";
+import * as $SelectorToggle from "./islands/SelectorToggle.tsx";
+import * as $SubjectSelector from "./islands/SubjectSelector.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -22,6 +24,8 @@ const manifest = {
 	islands: {
 		"./islands/CardHolder.tsx": $CardHolder,
 		"./islands/Filter.tsx": $Filter,
+		"./islands/SelectorToggle.tsx": $SelectorToggle,
+		"./islands/SubjectSelector.tsx": $SubjectSelector,
 	},
 	baseUrl: import.meta.url,
 } satisfies Manifest;
