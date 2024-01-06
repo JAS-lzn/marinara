@@ -1,4 +1,4 @@
-export const aux = [
+export const slicers = [
 	{
 		"name": "Cura",
 		"developer": "Ultimaker",

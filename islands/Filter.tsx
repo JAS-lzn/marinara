@@ -7,6 +7,8 @@ interface FilterProps {
 	licFilter: Signal<boolean>;
 	famFilter: Signal<boolean>;
 	motionFilter: Signal<boolean>;
+
+	printer: Signal<boolean>;
 }
 
 export default function Filter(props: FilterProps) {
@@ -15,8 +17,10 @@ export default function Filter(props: FilterProps) {
 	const licStatus = props.licFilter.value;
 	const famStatus = props.famFilter.value;
 	const motionStatus = props.motionFilter.value;
+
+	const printer = props.printer.value;
 	return (
-		<menu class="filter-holder">
+		<menu class={printer ? "filter-holder" : "hidden"}>
 			<FilterButton
 				class={nameStatus ? "filter-button filter-selected" : "filter-button"}
 				onClick={() => toggleFilters("name", props)}

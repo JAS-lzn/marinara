@@ -4,9 +4,17 @@ import CardHolder from "../islands/CardHolder.tsx";
 import Filter from "../islands/Filter.tsx";
 import SubjectSelector from "../islands/SubjectSelector.tsx";
 import SelectorToggle from "../islands/SelectorToggle.tsx";
+import { openAccessories } from "../sauce/accessory.ts";
+import { openSlicer } from "../sauce/slicer.ts";
+import { openFirmware } from "../sauce/firmware.ts";
 
 export default function Home() {
 	const sauces = useSignal(openSauce());
+	const accessoryList = useSignal(openAccessories());
+	const firmList = useSignal(openFirmware());
+	const sliceList = useSignal(openSlicer());
+
+	const selecting = useSignal(false);
 
 	const nameFilter = useSignal(false);
 	const devFilter = useSignal(false);
@@ -18,7 +26,6 @@ export default function Home() {
 	const firmware = useSignal(false);
 	const printer = useSignal(true);
 	const slicer = useSignal(false);
-	const selecting = useSignal(false);
 
 	return (
 		<div>
@@ -44,25 +51,34 @@ export default function Home() {
 				accessories={accessories}
 				firmware={firmware}
 				printer={printer}
-				slicer={slicer}
 				selecting={selecting}
+				slicer={slicer}
 			/>
 
 			<div class="body-holder">
 				<Filter
-					nameFilter={nameFilter}
 					devFilter={devFilter}
-					licFilter={licFilter}
 					famFilter={famFilter}
+					licFilter={licFilter}
 					motionFilter={motionFilter}
+					nameFilter={nameFilter}
+					printer={printer}
 				/>
 				<CardHolder
 					sauce={sauces}
-					nameFilter={nameFilter}
+					accessoryList={accessoryList}
+					firmList={firmList}
+					slicerList={sliceList}
 					devFilter={devFilter}
-					licFilter={licFilter}
 					famFilter={famFilter}
+					licFilter={licFilter}
 					motionFilter={motionFilter}
+					nameFilter={nameFilter}
+					accessories={accessories}
+					firmware={firmware}
+					printer={printer}
+					selecting={selecting}
+					slicer={slicer}
 				/>
 			</div>
 		</div>

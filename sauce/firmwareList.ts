@@ -1,4 +1,4 @@
-export const aux = [
+export const firmware = [
 	{
 		"name": "Marlin",
 		"developer": "MarlinFirmware",

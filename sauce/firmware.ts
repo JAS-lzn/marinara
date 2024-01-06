@@ -1,3 +1,5 @@
+import { firmware } from "./firmwareList.ts";
+
 /**
  * representation of a firmware for 3d printing
  */
@@ -31,4 +33,21 @@ export default class Firmware {
 		this.license = argLicense;
 		this.source = argSource;
 	}
+}
+
+export function openFirmware(): Array<Firmware> {
+	const firmAccumulator: Array<Firmware> = [];
+
+	firmware.forEach((firm) => {
+		firmAccumulator.push(
+			new Firmware({
+				argName: firm.name,
+				argDeveloper: firm.developer,
+				argLicense: firm.license,
+				argSource: new URL(firm.source),
+			}),
+		);
+	});
+
+	return firmAccumulator;
 }

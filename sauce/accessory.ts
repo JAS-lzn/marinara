@@ -1,3 +1,5 @@
+import { accessories } from "./accessoryList.ts";
+
 /**
  * representation of a add on, mod, etc for a 3d Printer
  * ex:https://github.com/Enraged-Rabbit-Community/ERCF_v2#enraged-rabbit-filametrix-erf
@@ -37,4 +39,22 @@ export default class Accessory {
 		this.description = argDescription;
 		this.source = argSource;
 	}
+}
+
+export function openAccessories(): Array<Accessory> {
+	const accessoryAccumulator: Array<Accessory> = [];
+
+	accessories.forEach((acc) => {
+		accessoryAccumulator.push(
+			new Accessory({
+				argName: acc.name,
+				argDeveloper: acc.developer,
+				argLicense: acc.license,
+				argDescription: acc.description,
+				argSource: new URL(acc.source),
+			}),
+		);
+	});
+
+	return accessoryAccumulator;
 }

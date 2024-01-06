@@ -1,3 +1,5 @@
+import { slicers } from "./slicerList.ts";
+
 /**
  * representation of a firmware for 3d printing
  */
@@ -31,4 +33,21 @@ export default class Slicer {
 		this.license = argLicense;
 		this.source = argSource;
 	}
+}
+
+export function openSlicer(): Array<Slicer> {
+	const firmAccumulator: Array<Slicer> = [];
+
+	slicers.forEach((slice) => {
+		firmAccumulator.push(
+			new Slicer({
+				argName: slice.name,
+				argDeveloper: slice.developer,
+				argLicense: slice.license,
+				argSource: new URL(slice.source),
+			}),
+		);
+	});
+
+	return firmAccumulator;
 }
