@@ -1,4 +1,6 @@
-![marinara logo](/static/sauce_small.png)
+<p align="center">
+  <img src="./static/sauce_small.png" />
+</p>
 
 # Marinara
 
