@@ -82,7 +82,7 @@ export default function CardHolder(props: DisplayProps) {
 		<div class="borneo">
 			<div id="filter-box">
 				<label for="text-filter" class="filter-label">Search</label>
-				<input id="text-filter" class="text-filter px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" type="text">piss</input>
+				<input id="text-filter" class="text-filter px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" type="text"></input>
 			</div>
 			<div class="card-grid">
 				{handleSelector(argContentSelector, argContent)}
