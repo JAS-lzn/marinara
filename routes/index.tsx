@@ -16,7 +16,7 @@ export default function Home() {
 
 	const selecting = useSignal(false);
 
-	const filterString = useSignal("")
+	const filterString = useSignal("");
 
 	const nameFilter = useSignal(false);
 	const devFilter = useSignal(false);
