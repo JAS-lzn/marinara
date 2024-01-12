@@ -1,4 +1,4 @@
-![marinara logo](/static/marinara_sauce_2.jpg)
+![marinara logo](/static/sauce.png)
 
 # Marinara
 
