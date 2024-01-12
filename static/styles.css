@@ -34,6 +34,8 @@
 
 .filter-holder{
 	text-align: center;
+	width: fit-content;
+	padding: 0 .5em;
 }
 
 .filter-holder > *{
@@ -99,6 +101,19 @@
 	width: 15em;
 	margin: 0px auto;
 	padding: .25em .5em;
+}
+
+#filter-parent{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: auto auto;
+	align-items: center;
+}
+
+#filter-parent > p {
+	text-align: end;
+	max-width: fit-content;
+	justify-self: right;
 }
 
 .filter-label{
