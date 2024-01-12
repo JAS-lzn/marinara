@@ -16,6 +16,8 @@ export default function Home() {
 
 	const selecting = useSignal(false);
 
+	const filterString = useSignal("")
+
 	const nameFilter = useSignal(false);
 	const devFilter = useSignal(false);
 	const licFilter = useSignal(false);
@@ -70,6 +72,7 @@ export default function Home() {
 					firmList={firmList}
 					slicerList={sliceList}
 					devFilter={devFilter}
+					filterString={filterString}
 					famFilter={famFilter}
 					licFilter={licFilter}
 					motionFilter={motionFilter}
