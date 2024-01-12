@@ -1,4 +1,7 @@
+![marinara logo](/static/marinara_sauce_2.jpg)
+
 # Marinara
+
 
 A site to help list, and search thru, all the open source 3D printers, firmware, slicers, and accessories I can find.
 
