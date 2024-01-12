@@ -20,9 +20,9 @@ export default function Filter(props: FilterProps) {
 
 	const printer = props.printer.value;
 	return (
-		<div id="filter-parent">
+		<div id="filter-parent" class={printer ? "" : "hidden"}>
 			<p>Sort By:</p>
-			<menu class={printer ? "filter-holder" : "hidden"}>
+			<menu class={"filter-holder"}>
 				<FilterButton
 					class={nameStatus ? "filter-button filter-selected" : "filter-button"}
 					onClick={() => toggleFilters("name", props)}
