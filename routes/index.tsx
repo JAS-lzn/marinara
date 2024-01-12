@@ -16,6 +16,8 @@ export default function Home() {
 
 	const selecting = useSignal(false);
 
+	const filterString = useSignal("");
+
 	const nameFilter = useSignal(false);
 	const devFilter = useSignal(false);
 	const licFilter = useSignal(false);
@@ -29,7 +31,7 @@ export default function Home() {
 
 	return (
 		<div>
-			<div id='banner' class="px-4 py-8 mx-auto bg-[#9B7676]">
+			<div id="banner" class="px-4 py-8 mx-auto bg-[#9B7676]">
 				<div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
 					<img
 						class="my-6"
@@ -70,6 +72,7 @@ export default function Home() {
 					firmList={firmList}
 					slicerList={sliceList}
 					devFilter={devFilter}
+					filterString={filterString}
 					famFilter={famFilter}
 					licFilter={licFilter}
 					motionFilter={motionFilter}

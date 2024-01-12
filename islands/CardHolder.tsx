@@ -16,6 +16,8 @@ interface DisplayProps {
 	firmList: Signal<Array<Firmware>>;
 	slicerList: Signal<Array<Slicer>>;
 
+	filterString: Signal<string>;
+
 	// filters for printers
 	nameFilter: Signal<boolean>;
 	devFilter: Signal<boolean>;
@@ -82,50 +84,68 @@ export default function CardHolder(props: DisplayProps) {
 		<div class="borneo">
 			<div id="filter-box">
 				<label for="text-filter" class="filter-label">Search</label>
-				<input id="text-filter" class="text-filter px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" type="text"></input>
+				<input
+					id="text-filter"
+					value={props.filterString.value}
+					// IDK what this wants from me
+					// https://developer.mozilla.org/en-US/docs/Web/API/Element/input_event
+					// I promise these things exist
+					onInput={(event: InputEvent) => props.filterString.value = event.target?.value || ""}
+					class="text-filter px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none"
+					type="text"
+				>
+				</input>
 			</div>
 			<div class="card-grid">
-				{handleSelector(argContentSelector, argContent)}
+				{handleSelector(argContentSelector, argContent, props.filterString.value)}
 			</div>
 		</div>
 	);
 }
 
-function handleSelector(argContentSelector: selectedContent, argContent: contentOptions) {
+function handleSelector(argContentSelector: selectedContent, argContent: contentOptions, argFilterText: string) {
 	const setOfCards: Array<JSX.Element> = [];
 
 	if (argContentSelector.accessories) {
 		argContent.accessories.forEach((acc) => {
-			setOfCards.push(
-				<AccessoryCard acc={acc} />,
-			);
+			if (JSON.stringify(acc).toLowerCase().includes(argFilterText.toLowerCase())) {
+				setOfCards.push(
+					<AccessoryCard acc={acc} />,
+				);
+			}
 		});
 
 		return setOfCards;
 	}
 	if (argContentSelector.slicer) {
 		argContent.slicers.forEach((slice) => {
-			setOfCards.push(
-				<SlicerCard slice={slice} />,
-			);
+			if (JSON.stringify(slice).toLowerCase().includes(argFilterText.toLowerCase())) {
+				setOfCards.push(
+					<SlicerCard slice={slice} />,
+				);
+			}
 		});
 
 		return setOfCards;
 	}
 	if (argContentSelector.firmware) {
 		argContent.firmware.forEach((firm) => {
-			setOfCards.push(
-				<FirmwareCard firm={firm} />,
-			);
+			if (JSON.stringify(firm).toLowerCase().includes(argFilterText.toLowerCase())) {
+				setOfCards.push(
+					<FirmwareCard firm={firm} />,
+				);
+			}
 		});
 
 		return setOfCards;
 	}
 
 	argContent.printers.forEach((printer) => {
-		setOfCards.push(
-			<PrinterCard sauce={printer} />,
-		);
+		if (JSON.stringify(printer).toLowerCase().includes(argFilterText.toLowerCase())) {
+			setOfCards.push(
+				<PrinterCard sauce={printer} />,
+			);
+		}
 	});
 	return setOfCards;
 }
