@@ -89,7 +89,25 @@
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	--tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-	
+}
+
+.borneo{
+	display: grid;
+}
+
+.text-filter{
+	width: 15em;
+	margin: 0px auto;
+	padding: .25em .5em;
+}
+
+.filter-label{
+	padding: .125em 0em
+}
+
+#filter-box {
+	width: fit-content;
+	margin: 0px auto;
 }
 
 .subject-selector.visible{

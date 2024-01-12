@@ -44,7 +44,7 @@ export default function Home() {
 					</p>
 				</div>
 			</div>
-			<div class="text-right toggle-holder">
+			<div class="text-left toggle-holder">
 				<SelectorToggle selecting={selecting} />
 			</div>
 			<SubjectSelector
