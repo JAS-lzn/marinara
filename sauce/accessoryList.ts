@@ -36,4 +36,18 @@ export const accessories = [
 		"description": "A Raspberry Pi OS based distribution for 3D Printers.",
 		"source": "https://github.com/mainsail-crew/MainsailOS",
 	},
+	{
+		"name": "Nevermore_Micro",
+		"developer": "nevermore3d",
+		"license": "GNU GPLv3",
+		"description": "Activated Carbon Filters - Micro Edition",
+		"source": "https://github.com/nevermore3d/Nevermore_Micro",
+	},
+	{
+		"name": "StealthMax",
+		"developer": "nevermore3d",
+		"license": "GNU GPLv3",
+		"description": "Air filter for 3D printing",
+		"source": "https://github.com/nevermore3d/StealthMax",
+	},
 ];
