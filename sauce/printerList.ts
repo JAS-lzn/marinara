@@ -163,7 +163,7 @@ export const sauces = [
 	},
 	{
 		"name": "Snappy 3",
-		"developer":"RevarBat",
+		"developer": "RevarBat",
 		"family": "",
 		"license": "GPL",
 		"motionSystem": MotionSystem.bedSlinger,
@@ -171,7 +171,7 @@ export const sauces = [
 	},
 	{
 		"name": "Hangprinterv4",
-		"developer":"Tobben",
+		"developer": "Tobben",
 		"family": "Hangprinter",
 		"license": "GPL",
 		"motionSystem": MotionSystem.bedSlinger,
@@ -179,7 +179,7 @@ export const sauces = [
 	},
 	{
 		"name": "Darwin",
-		"developer":"RepRap Community",
+		"developer": "RepRap Community",
 		"family": "",
 		"license": "GNU GPL",
 		"motionSystem": MotionSystem.bedSlinger,
@@ -187,7 +187,7 @@ export const sauces = [
 	},
 	{
 		"name": "Prusa i3 MK3S",
-		"developer":"prusa3d",
+		"developer": "prusa3d",
 		"family": "",
 		"license": "GPL-2.0",
 		"motionSystem": MotionSystem.bedSlinger,
@@ -195,7 +195,7 @@ export const sauces = [
 	},
 	{
 		"name": "Rostock",
-		"developer":"Johann",
+		"developer": "Johann",
 		"family": "",
 		"license": "GPL",
 		"motionSystem": MotionSystem.delta,
@@ -203,7 +203,7 @@ export const sauces = [
 	},
 	{
 		"name": "CREATABLE_D3",
-		"developer":"AteamVentures",
+		"developer": "AteamVentures",
 		"family": "",
 		"license": "GPL",
 		"motionSystem": MotionSystem.delta,
