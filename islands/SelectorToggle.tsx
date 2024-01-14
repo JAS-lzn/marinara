@@ -14,7 +14,7 @@ export default function SelectorToggle(props: ToggleProps) {
 				props.selecting.value = !selecting;
 			}}
 		>
-			Other Projects
+			More Stuff
 		</button>
 	);
 }
