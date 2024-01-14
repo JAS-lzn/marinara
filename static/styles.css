@@ -1,17 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .body-holder{
 	width: 90vw;
 	margin: auto;
 }
 
+@media (width <= 350px){
+	.card-grid{
+		grid-template-columns: repeat(1, 1fr);	
+	};
+}
+
+
+@media (350px <= width <= 900px){
+	.card-grid{
+		grid-template-columns: repeat(2, 1fr);	
+	};
+}
+
+
+@media (900px <= width){
+	.card-grid{
+		grid-template-columns: repeat(5, 1fr);	
+	};
+}
+
+
 .card-grid{
 	padding:2rem;
 	margin: auto;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: auto;
 	column-gap: 2vw;
 	row-gap: 2vh;
@@ -47,18 +63,18 @@
 }
 
 .selected-selector{
-	background-color:teal;
+	background-color:teal !important;
 }
 
 .filter-button{
-	padding-left: 0.5rem/* 8px */;
-    padding-right: 0.5rem/* 8px */;
-	padding-top: 0.25rem/* 4px */;
-    padding-bottom: 0.25rem/* 4px */;
+	padding-left: 0.5rem;
+    padding-right: 0.5rem;
+	padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 	--tw-border-opacity: 1;
     border-color: rgb(107 114 128 / var(--tw-border-opacity));
 	border-width: 2px;
-	border-radius: 0.25rem/* 4px */;
+	border-radius: 0.25rem;
 	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
@@ -82,7 +98,7 @@
 	display: grid;
 	text-align: left;
 	padding-left: .25vw;
-	width: 15vw;
+	width: 10em;
 	top: 0px;
 	left: 0px;
 	z-index: 40;
