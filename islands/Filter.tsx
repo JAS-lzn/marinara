@@ -20,38 +20,41 @@ export default function Filter(props: FilterProps) {
 
 	const printer = props.printer.value;
 	return (
-		<menu class={printer ? "filter-holder" : "hidden"}>
-			<FilterButton
-				class={nameStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => toggleFilters("name", props)}
-			>
-				Name
-			</FilterButton>
-			<FilterButton
-				class={devStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => toggleFilters("dev", props)}
-			>
-				Developer
-			</FilterButton>
-			<FilterButton
-				class={licStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => toggleFilters("lic", props)}
-			>
-				License
-			</FilterButton>
-			<FilterButton
-				class={famStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => toggleFilters("fam", props)}
-			>
-				Family
-			</FilterButton>
-			<FilterButton
-				class={motionStatus ? "filter-button filter-selected" : "filter-button"}
-				onClick={() => toggleFilters("motion", props)}
-			>
-				Motion System
-			</FilterButton>
-		</menu>
+		<div id="filter-parent" class={printer ? "" : "hidden"}>
+			<p>Sort By:</p>
+			<menu class={"filter-holder"}>
+				<FilterButton
+					class={nameStatus ? "filter-button filter-selected" : "filter-button"}
+					onClick={() => toggleFilters("name", props)}
+				>
+					Name
+				</FilterButton>
+				<FilterButton
+					class={devStatus ? "filter-button filter-selected" : "filter-button"}
+					onClick={() => toggleFilters("dev", props)}
+				>
+					Developer
+				</FilterButton>
+				<FilterButton
+					class={licStatus ? "filter-button filter-selected" : "filter-button"}
+					onClick={() => toggleFilters("lic", props)}
+				>
+					License
+				</FilterButton>
+				<FilterButton
+					class={famStatus ? "filter-button filter-selected" : "filter-button"}
+					onClick={() => toggleFilters("fam", props)}
+				>
+					Family
+				</FilterButton>
+				<FilterButton
+					class={motionStatus ? "filter-button filter-selected" : "filter-button"}
+					onClick={() => toggleFilters("motion", props)}
+				>
+					Motion System
+				</FilterButton>
+			</menu>
+		</div>
 	);
 }
 
