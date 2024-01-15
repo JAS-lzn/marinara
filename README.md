@@ -4,7 +4,9 @@
 
 # Marinara
 
-A site to help list, and search thru, all the open source 3D printers, firmware, slicers, and accessories I can find.
+A web-app to help list, and search thru, all the open source 3D printers, firmware, slicers, and accessories I can find.
+
+[Hosted on Deno.dev](https://marinara.deno.dev/)
 
 # Motivation
 
