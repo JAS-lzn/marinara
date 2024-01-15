@@ -18,43 +18,45 @@ export default function SubjectSelector(props: SubjectProps) {
 	const slicer = props.slicer.value;
 
 	return (
-		<div
-			className={selecting ? "subject-selector visible" : "subject-selector"}
-			tabindex={-1}
-			aria-labelledby="drawer-label"
-		>
-			<Subject
-				className={accessories ? "selected-selector" : ""}
-				onClick={() => {
-					toggleSelectors("accessories", props);
-				}}
+		<div className={selecting ? "drawer-visible" : "drawer-hidden"} onClick={() => props.selecting.value = false}>
+			<div
+				className={selecting ? "subject-selector visible" : "subject-selector"}
+				tabindex={-1}
+				aria-labelledby="drawer-label"
 			>
-				Accessories
-			</Subject>
-			<Subject
-				className={firmware ? "selected-selector" : ""}
-				onClick={() => {
-					toggleSelectors("firmware", props);
-				}}
-			>
-				Firmware
-			</Subject>
-			<Subject
-				className={printer ? "selected-selector" : ""}
-				onClick={() => {
-					toggleSelectors("printer", props);
-				}}
-			>
-				Printers
-			</Subject>
-			<Subject
-				className={slicer ? "selected-selector" : ""}
-				onClick={() => {
-					toggleSelectors("slicer", props);
-				}}
-			>
-				Slicers
-			</Subject>
+				<Subject
+					className={accessories ? "selected-selector" : ""}
+					onClick={() => {
+						toggleSelectors("accessories", props);
+					}}
+				>
+					Accessories
+				</Subject>
+				<Subject
+					className={firmware ? "selected-selector" : ""}
+					onClick={() => {
+						toggleSelectors("firmware", props);
+					}}
+				>
+					Firmware
+				</Subject>
+				<Subject
+					className={printer ? "selected-selector" : ""}
+					onClick={() => {
+						toggleSelectors("printer", props);
+					}}
+				>
+					Printers
+				</Subject>
+				<Subject
+					className={slicer ? "selected-selector" : ""}
+					onClick={() => {
+						toggleSelectors("slicer", props);
+					}}
+				>
+					Slicers
+				</Subject>
+			</div>
 		</div>
 	);
 }
