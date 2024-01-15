@@ -1,6 +1,7 @@
 .body-holder{
 	width: 90vw;
 	margin: auto;
+	position: relative;
 }
 
 @media (width <= 350px){
@@ -40,6 +41,14 @@
 	padding: .5rem;
 }
 
+.drawer-visible {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
 .hidden{
 	display: none !important;
 }
@@ -67,6 +76,8 @@
 }
 
 .filter-button{
+	z-index: 2;
+	position: relative;
 	padding-left: 0.5rem;
     padding-right: 0.5rem;
 	padding-top: 0.25rem;
@@ -118,6 +129,8 @@
 }
 
 .text-filter{
+	position: relative;
+	z-index: 2;
 	width: 15em;
 	margin: 0px auto;
 	padding: .25em .5em;
