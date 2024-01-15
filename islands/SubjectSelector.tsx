@@ -63,7 +63,6 @@ export default function SubjectSelector(props: SubjectProps) {
 
 // this feels illegal, but I can't think of a better idea
 function toggleSelectors(argSelector: string, argProps: SubjectProps) {
-	console.log("toggling selectors");
 	argProps.accessories.value = argSelector === "accessories" ? true : false;
 	argProps.firmware.value = argSelector === "firmware" ? true : false;
 	argProps.printer.value = argSelector === "printer" ? true : false;
