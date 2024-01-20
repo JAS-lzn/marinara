@@ -209,4 +209,12 @@ export const sauces = [
 		"motionSystem": MotionSystem.delta,
 		"source": "https://github.com/AteamVentures/CREATABLE_D3",
 	},
+	{
+		"name": "Original-Prusa-CW1",
+		"developer": "prusa3d",
+		"family": "",
+		"license": "GNU GPL-2.0",
+		"motionSystem": MotionSystem.other,
+		"source": "https://github.com/prusa3d/Original-Prusa-CW1",
+	},
 ];

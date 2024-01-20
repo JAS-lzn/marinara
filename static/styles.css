@@ -39,6 +39,8 @@
 	font-size: small;
 	background-color: #e6f2ff;
 	padding: .5rem;
+	border-radius: 5px;
+  	border: 1px solid #98cfff;
 }
 
 .drawer-visible {
@@ -46,7 +48,7 @@
 	height: 100vh;
 	position: fixed;
 	top: 0;
-	z-index: 1;
+	z-index: 3;
 }
 
 .hidden{
@@ -69,6 +71,11 @@
 
 .filter-holder > *{
 	margin: 1em .125em;
+}
+
+#banner{
+	display: block ruby;
+	text-align: center;
 }
 
 .selected-selector{
@@ -101,6 +108,8 @@
 }
 
 .toggle-holder{
+	position: relative;
+	float: left;
 	padding: 1vh 2vw;
 }
 
@@ -134,6 +143,11 @@
 	width: 15em;
 	margin: 0px auto;
 	padding: .25em .5em;
+}
+
+.sauce{
+	position: relative;
+	float: right;
 }
 
 #filter-parent{
