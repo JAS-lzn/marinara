@@ -110,7 +110,9 @@
 .toggle-holder{
 	position: relative;
 	float: left;
-	padding: 1vh 2vw;
+	height: 128px;
+	width: 128px;
+	padding: .75em;
 }
 
 .subject-selector{
