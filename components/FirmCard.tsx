@@ -17,6 +17,7 @@ export default function FirmwareCard(props: CounterProps): JSX.Element {
 			<p>
 				Link to Project: <a target="self" href={currentURL.toString()}>{currentURL.host?.toString()}</a>
 			</p>
+
 			<p>License: {currentFirmware.license}</p>
 		</div>
 	);

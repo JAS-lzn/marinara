@@ -31,24 +31,25 @@ export default function Home() {
 
 	return (
 		<div>
-			<div id="banner" class="px-4 py-8 mx-auto bg-[#9B7676]">
+			<img
+				class="sauce"
+				src="/sauce.png"
+				width="128"
+				height="128"
+				alt="the Marinara logo: a stylized jar of marinara sauce with sauce and basil coming out the mouth of the jar"
+			/>
+			<div class="text-left toggle-holder">
+				<SelectorToggle selecting={selecting} />
+			</div>
+			<div id="banner" class="w-16 py-8 mx-auto bg-[#9B7676]">
 				<div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-					<img
-						class="my-6"
-						src="/sauce.png"
-						width="128"
-						height="128"
-						alt="the Marinara logo: a stylized jar of marinara sauce with sauce and basil coming out the mouth of the jar"
-					/>
 					<h1 class="text-4xl font-bold">Marinara</h1>
 					<p class="my-4">
 						Find some tasty open sauce 3D Printing projects today!
 					</p>
 				</div>
 			</div>
-			<div class="text-left toggle-holder">
-				<SelectorToggle selecting={selecting} />
-			</div>
+
 			<SubjectSelector
 				accessories={accessories}
 				firmware={firmware}
