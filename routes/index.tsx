@@ -31,13 +31,15 @@ export default function Home() {
 
 	return (
 		<div>
-			<img
-				class="sauce"
-				src="/sauce.png"
-				width="128"
-				height="128"
-				alt="the Marinara logo: a stylized jar of marinara sauce with sauce and basil coming out the mouth of the jar"
-			/>
+			<a target={"self"} href={"https://github.com/JAS-lzn/marinara"}>
+				<img
+					class="sauce"
+					src="/sauce.png"
+					width="128"
+					height="128"
+					alt="the Marinara logo: a stylized jar of marinara sauce with sauce and basil coming out the mouth of the jar"
+				/>
+			</a>
 			<div class="text-left toggle-holder">
 				<SelectorToggle selecting={selecting} />
 			</div>
