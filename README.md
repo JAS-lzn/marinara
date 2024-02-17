@@ -30,11 +30,13 @@ lastly, navigate to server (normally `localhost:xxxx`)
 
 # Special Thanks and Notes
 
-Special thanks goes out to Dr Adrian Bowyer, and all of the adopters and contributors to the RepRap project. Without
-their efforts, commitments, and effort none of this would exist. Special thanks also goes out to all the people who
-contribute to all of projects listed here (and the uncounted projects that should be here, but I've missed). The 3d
-printing community's commitment to Free and/or Open Source software and hardware has allowed countless people to create
-and learn, and should be an inspiration to us all.
+Special thanks goes out to Dr Adrian Bowyer, and all of the adopters and contributors to the RepRap project. The RepRap
+project is the giant whose shoulders we stand upon today. Without their efforts, commitments, and effort the 3D Printing
+community would be nothing like what it is today.
+
+Special thanks also goes out to all the people who contribute to all of projects listed here (and the uncounted projects
+that should be here, but I've missed). The 3d printing community's commitment to Free and/or Open Source software and
+hardware has allowed countless people to create and learn, and should be an inspiration to us all.
 
 Many of these maintainers have Patreon, Ko-fi, paypal, etc or have official partnerships with vendors like
 [Fabreeko](https://www.fabreeko.com/),[west3d](https://west3d.com/),
