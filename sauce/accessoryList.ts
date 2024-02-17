@@ -50,4 +50,18 @@ export const accessories = [
 		"description": "Air filter for 3D printing",
 		"source": "https://github.com/nevermore3d/StealthMax",
 	},
+	{
+		"name": "TradRack",
+		"developer": "Annex-Engineering",
+		"license": "https://github.com/Annex-Engineering/ANNEX-Engineering-License-Agreement",
+		"description": "Multi Material Unit",
+		"source": "https://github.com/Annex-Engineering/TradRack",
+	},
+	{
+		"name": "Sherpa Extruder",
+		"developer": "Annex-Engineering",
+		"license": "https://github.com/Annex-Engineering/Sherpa-Extruder?tab=License-1-ov-file",
+		"description": "Dual geared hobbed filament extruders",
+		"source": "https://github.com/Annex-Engineering/Sherpa-Extruder",
+	},
 ];
