@@ -30,9 +30,9 @@ lastly, navigate to server (normally `localhost:xxxx`)
 
 # Special Thanks and Notes
 
-Special thanks goes out to Dr Adrian Bowyer, and all of the adopters and contributors to the RepRap project. The RepRap
-project is the giant whose shoulders we stand upon today. Without their efforts, commitments, and effort the 3D Printing
-community would be nothing like what it is today.
+Special thanks goes out to Dr Adrian Bowyer, and all of the maintainers, contributors, and users of the RepRap project.
+The RepRap project is the giant whose shoulders we stand upon today. Without their efforts, commitments, and effort the
+3D Printing community would be nothing like what it is today.
 
 Special thanks also goes out to all the people who contribute to all of projects listed here (and the uncounted projects
 that should be here, but I've missed). The 3d printing community's commitment to Free and/or Open Source software and
