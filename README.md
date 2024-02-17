@@ -27,3 +27,19 @@ Then, using the command line of your choice, you'll want to navigate to the repo
 compile the code, and launch a server to launch the application on.
 
 lastly, navigate to server (normally `localhost:xxxx`)
+
+# Special Thanks and Notes
+
+Special thanks goes out to Dr Adrian Bowyer, and all of the maintainers, contributors, and users of the RepRap project.
+The RepRap project is the giant whose shoulders we stand upon today. Without their efforts, commitments, and effort the
+3D Printing community would be nothing like what it is today.
+
+Special thanks also goes out to all the people who contribute to all of projects listed here (and the uncounted projects
+that should be here, but I've missed). The 3d printing community's commitment to Free and/or Open Source software and
+hardware has allowed countless people to create and learn, and should be an inspiration to us all.
+
+Many of these maintainers have Patreon, Ko-fi, paypal, etc or have official partnerships with vendors like
+[Fabreeko](https://www.fabreeko.com/),[west3d](https://west3d.com/),
+[MatterHackers](https://www.matterhackers.com/s/store?q=LDO) or other storefronts.
+
+If you feel comfortable doing so, please check with individual maintainers to see how they'd prefer you to support then.
